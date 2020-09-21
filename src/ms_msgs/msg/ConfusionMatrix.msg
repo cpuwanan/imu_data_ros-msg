@@ -1,0 +1,9 @@
+std_msgs/Header header
+string title
+string row_title
+string col_title
+string[] row_labels
+string[] col_labels
+int32 rows
+int32 cols
+float64[] data

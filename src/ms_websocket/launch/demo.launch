@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<launch>
+	
+	<node pkg="ms_websocket" type="test_imu_data_publisher" 	
+				name="test_imu_data_publisher" 	
+				output="screen" launch-prefix="">		
+	</node>
+			
+</launch>
