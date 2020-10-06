@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<launch>
+	
+	<arg name="root_dir" value="$(find ms_perception)" />
+		
+	<node if="true" 
+				name="net_predict_event_py" type="net_predict_event.py" 
+				pkg="ms_perception" output="screen" launch-prefix=""
+	>
+		<param name="config_filename" value="$(arg root_dir)/config/net_predict_event.yaml" />
+		<param name="prob_threshold" value="0.7" />
+	</node>
+		
+	<node if="false" name="fake_imu_data_publishing_py" type="fake_imu_data_publishing.py" 
+				pkg="ms_perception"
+				output="screen"
+				launch-prefix=""
+	>
+	</node>
+	
+</launch>

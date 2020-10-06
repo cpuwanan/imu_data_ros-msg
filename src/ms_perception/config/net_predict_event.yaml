@@ -1,0 +1,21 @@
+# Tested with Rosbot2.0
+
+data_dir: "/mnt/mydata/projects/python_projects/data/201005_imu"
+
+selective_data: 
+  - { name: "ax", index: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1] }
+  - { name: "ay", index: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1] }
+  - { name: "az", index: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1] }
+  - { name: "gx", index: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1] }
+  - { name: "gy", index: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1] }
+  - { name: "gz", index: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1] }
+
+event_annotations: ["unk", "stop", "move", "danger", "hit"]
+
+model_name: 'naivebayes' # gaussian, svm, neuralnet, naivebayes
+
+tensorflow:
+  saved_dir: /tensorflow_res
+  epoch_num: 10
+  test_size: 0.3
+  data_shape: [6, 10, 1]
