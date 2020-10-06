@@ -1,5 +1,7 @@
 # imu_data_ros-msg
-Publish IMU data and confusion matrix in a format of ROS message
+Key:
+- read IMU data, and do FFT
+- predict events using Tensorflow
 
 ## Sample training results
 
